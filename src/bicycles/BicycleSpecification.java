@@ -15,4 +15,17 @@ public class BicycleSpecification {
     public int getBrakeSpeed() {
         return brakeSpeed;
     }
+
+    /*private int accelerationSpeed;
+    // add a variable for brakeSpeed
+
+    public BicycleSpecification(int accelerationSpeed, int brakeSpeed, BicycleType bicycleType) {
+        // existing code above this
+        this.bicycleType = bicycleType;
+    }
+
+    public BicycleType getBicycleType(){
+        return bicycleType;
+    }
+    // add getters for brakeSpeed*/
 }
