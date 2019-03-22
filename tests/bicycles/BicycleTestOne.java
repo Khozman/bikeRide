@@ -9,7 +9,7 @@ public class BicycleTestOne {
     @Test
     public void shouldReturnCurrentSpeedForMountainBike() {
         // MountainBike
-        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3);
+        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
         BikeRideOne mBikeRide = new BikeRideOne(bicycle);
         mBikeRide.ride();

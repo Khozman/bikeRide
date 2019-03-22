@@ -5,4 +5,5 @@ public interface Bicycle {
     void brake();
     void stop();
     int currentSpeed();
+    BicycleType getBicycleType();
 }

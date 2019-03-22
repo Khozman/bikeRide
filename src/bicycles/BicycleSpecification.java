@@ -1,7 +1,8 @@
 package bicycles;
 
 public class BicycleSpecification {
-    private int accelerationSpeed;
+    private final BicycleType bicycleType;
+    /*private int accelerationSpeed;
     private int brakeSpeed;
 
     public BicycleSpecification(int accelerationSpeed, int brakeSpeed) {
@@ -14,9 +15,10 @@ public class BicycleSpecification {
     }
     public int getBrakeSpeed() {
         return brakeSpeed;
-    }
+    }*/
 
-    /*private int accelerationSpeed;
+    private int accelerationSpeed;
+    private int brakeSpeed;
     // add a variable for brakeSpeed
 
     public BicycleSpecification(int accelerationSpeed, int brakeSpeed, BicycleType bicycleType) {
@@ -27,5 +29,13 @@ public class BicycleSpecification {
     public BicycleType getBicycleType(){
         return bicycleType;
     }
-    // add getters for brakeSpeed*/
+
+    public int getAccelerationSpeed() {
+        return accelerationSpeed;
+    }
+
+    public int getBrakeSpeed() {
+        return brakeSpeed;
+    }
+    // add getters for brakeSpeed
 }
