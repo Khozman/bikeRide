@@ -10,7 +10,7 @@ public class BicycleTestThree {
     @Test
     public void shouldReturnCurrentSpeedForMountainBike() {
         // MountainBike
-        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3);
+        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
         BikeRideThree mBikeRide = new BikeRideThree(bicycle);
         mBikeRide.ride();
@@ -21,7 +21,7 @@ public class BicycleTestThree {
     @Test
     public void shouldReturnCurrentSpeedForRoadBike() {
         // RoadBike
-        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -4);
+        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -4, BicycleType.RoadBike);
         Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
         BikeRideThree bikeRide = new BikeRideThree(bicycle);
         bikeRide.ride();
@@ -32,7 +32,7 @@ public class BicycleTestThree {
     @Test
     public void shouldReturnCurrentSpeedForTandem() {
         // Tandem
-        BicycleSpecification tandemSpec = new BicycleSpecification(5, -3);
+        BicycleSpecification tandemSpec = new BicycleSpecification(5, -3, BicycleType.Tandem);
         Bicycle bicycle = new BicycleFromSpec(tandemSpec);
         BikeRideThree tBikeRide = new BikeRideThree(bicycle);
         tBikeRide.ride();

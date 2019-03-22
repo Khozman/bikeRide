@@ -24,6 +24,8 @@ public class BicycleSpecification {
     public BicycleSpecification(int accelerationSpeed, int brakeSpeed, BicycleType bicycleType) {
         // existing code above this
         this.bicycleType = bicycleType;
+        this.accelerationSpeed = accelerationSpeed;
+        this.brakeSpeed = brakeSpeed;
     }
 
     public BicycleType getBicycleType(){
