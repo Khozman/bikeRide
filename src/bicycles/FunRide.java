@@ -24,7 +24,7 @@ public class FunRide {
         int counter = 0;
         for(Bicycle bike : board){
             if(bike.getBicycleType() == type){
-                System.out.println(bike.getBicycleType());
+//                System.out.println(bike.getBicycleType());
                 counter ++;
             }
         }
