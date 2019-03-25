@@ -4,12 +4,11 @@ import java.util.ArrayList;
 
 public class FunRide {
     int maximNumBikes;
-    //Bicycle[] board;
     ArrayList<Bicycle> board = new ArrayList<>();
+    private Object BicycleType;
 
     public FunRide(int maximNumBikes){
         this.maximNumBikes = maximNumBikes;
-       // board = new Bicycle[maximNumBikes];
     }
 
     public String accept(Bicycle bike){
@@ -21,8 +20,15 @@ public class FunRide {
         return "Bicycle not Accepted ";
     }
 
-    public BicycleType getCountForType(){
-
+    public Integer getCountForType(BicycleType type){
+        int counter = 0;
+        for(Bicycle bike : board){
+            if(bike.getBicycleType() == type){
+                System.out.println(bike.getBicycleType());
+                counter ++;
+            }
+        }
+        return counter;
     }
 
     public int getEnteredCount() {

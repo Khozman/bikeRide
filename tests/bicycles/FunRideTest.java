@@ -18,8 +18,8 @@ public class FunRideTest {
         funRide.accept(bicycle);
 
         assertEquals(funRide.getEnteredCount(), 4);
+        assertEquals(funRide.getCountForType(BicycleType.Tandem), 4);
         assertEquals(funRide.accept(bicycle), "Bicycle Accepted on board");
-//        assertEquals(funRide.accept(bicycle), "Bicycle not Accepted ");
 
     }
 
