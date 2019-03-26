@@ -1,11 +1,14 @@
-package bicycles;
+package bicycles.rides;
 
-import bicycles.rides.BikeRideOne;
+import bicycles.Bicycle;
+import bicycles.specification.BicycleFromSpec;
+import bicycles.specification.BicycleSpecification;
+import bicycles.BicycleType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BicycleTestOne {
+public class BikeRideOneTest {
     @Test
     public void shouldReturnCurrentSpeedForMountainBike() {
         // MountainBike

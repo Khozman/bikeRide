@@ -1,4 +1,6 @@
-package bicycles;
+package bicycles.rides;
+
+import bicycles.*;
 
 import java.util.ArrayList;
 
@@ -13,14 +15,14 @@ public class FunRide {
 
     public String accept(Bicycle bike){
 
-        if (board.size() < maximNumBikes) {
+        if (board.size() < maximNumBikes && !board.contains(bike)) {
             board.add(bike);
             return "Bicycle Accepted on board";
         }
         return "Bicycle not Accepted ";
     }
 
-    public Integer getCountForType(BicycleType type){
+    public Integer getCountForType(bicycles.BicycleType type){
         int counter = 0;
         for(Bicycle bike : board){
             if(bike.getBicycleType() == type){

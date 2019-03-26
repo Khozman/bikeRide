@@ -1,20 +1,23 @@
-package bicycles;
+package bicycles.rides;
 
-import bicycles.rides.BikeRideTwo;
+import bicycles.Bicycle;
+import bicycles.specification.BicycleFromSpec;
+import bicycles.specification.BicycleSpecification;
+import bicycles.BicycleType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BicycleTestTwo {
+public class SlowRideTest {
     @Test
     public void shouldReturnCurrentSpeedForMountainBike() {
         // MountainBike
         BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
-        BikeRideTwo mBikeRide = new BikeRideTwo(bicycle);
+        SlowRide mBikeRide = new SlowRide(bicycle);
         mBikeRide.ride();
 
-        assertEquals(mBikeRide.currentSpeed(), 5);
+        assertEquals(mBikeRide.currentSpeed(), 0);
     }
 
     @Test
@@ -22,10 +25,10 @@ public class BicycleTestTwo {
         // RoadBike
         BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -4, BicycleType.RoadBike);
         Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
-        BikeRideTwo bikeRide = new BikeRideTwo(bicycle);
+        SlowRide bikeRide = new SlowRide(bicycle);
         bikeRide.ride();
 
-        assertEquals(bikeRide.currentSpeed(), 14);
+        assertEquals(bikeRide.currentSpeed(), 0);
     }
 
     @Test
@@ -33,9 +36,9 @@ public class BicycleTestTwo {
         // Tandem
         BicycleSpecification tandemSpec = new BicycleSpecification(5, -3, BicycleType.Tandem);
         Bicycle bicycle = new BicycleFromSpec(tandemSpec);
-        BikeRideTwo tBikeRide = new BikeRideTwo(bicycle);
+        SlowRide tBikeRide = new SlowRide(bicycle);
         tBikeRide.ride();
 
-        assertEquals(tBikeRide.currentSpeed(), 5);
+        assertEquals(tBikeRide.currentSpeed(), 0);
     }
 }

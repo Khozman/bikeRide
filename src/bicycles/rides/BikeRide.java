@@ -1,4 +1,4 @@
-package bicycles;
+package bicycles.rides;
 
 public interface BikeRide {
     public void ride();

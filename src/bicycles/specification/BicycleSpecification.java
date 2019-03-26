@@ -1,4 +1,6 @@
-package bicycles;
+package bicycles.specification;
+
+import bicycles.BicycleType;
 
 public class BicycleSpecification {
     private final BicycleType bicycleType;

@@ -1,12 +1,11 @@
 package bicycles.rides;
 
 import bicycles.Bicycle;
-import bicycles.BikeRide;
 
-public class BikeRideThree implements BikeRide {
+public class SlowRide implements BikeRide {
     private final Bicycle bicycle;
 
-    public BikeRideThree(Bicycle bicycle){
+    public SlowRide(Bicycle bicycle){
         this.bicycle = bicycle;
     }
 
